@@ -1,0 +1,22 @@
+[package]
+name = "bevy-ruby-render"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+bevy_transform.workspace = true
+bevy_color.workspace = true
+bevy_render = { workspace = true }
+bevy_sprite = { workspace = true }
+bevy_window.workspace = true
+bevy_core_pipeline = { workspace = true }
+bevy_asset.workspace = true
+bevy_hierarchy.workspace = true
+bevy_image.workspace = true
+bevy_text = { workspace = true }
+bevy_prototype_lyon.workspace = true

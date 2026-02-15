@@ -1,0 +1,52 @@
+[package]
+name = "bevy-ruby"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[features]
+default = ["rendering"]
+rendering = [
+    "bevy_window",
+    "bevy_winit",
+    "bevy_render",
+    "bevy_sprite",
+    "bevy_core_pipeline",
+    "bevy_asset",
+    "bevy_hierarchy",
+    "bevy_log",
+    "bevy_core",
+    "bevy_a11y",
+    "bevy_image",
+    "bevy_text",
+    "bevy_picking",
+    "bevy_prototype_lyon",
+]
+
+[dependencies]
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+bevy_transform.workspace = true
+bevy_color.workspace = true
+bevy_time.workspace = true
+bevy_input.workspace = true
+parking_lot.workspace = true
+thiserror.workspace = true
+
+# Optional rendering dependencies
+bevy_window = { workspace = true, optional = true }
+bevy_winit = { workspace = true, optional = true, features = ["x11", "wayland"] }
+bevy_render = { workspace = true, optional = true }
+bevy_sprite = { workspace = true, optional = true }
+bevy_core_pipeline = { workspace = true, optional = true }
+bevy_asset = { workspace = true, optional = true }
+bevy_hierarchy = { workspace = true, optional = true }
+bevy_log = { workspace = true, optional = true }
+bevy_core = { workspace = true, optional = true }
+bevy_a11y = { workspace = true, optional = true }
+bevy_image = { workspace = true, optional = true }
+bevy_text = { workspace = true, optional = true, features = ["default_font"] }
+bevy_picking = { workspace = true, optional = true }
+bevy_prototype_lyon = { workspace = true, optional = true }

@@ -1,0 +1,20 @@
+[package]
+name = "bevy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["rendering"]
+rendering = ["bevy-ruby/rendering"]
+
+[dependencies]
+bevy-ruby = { path = "../../crates/bevy", default-features = false }
+magnus.workspace = true
+rb-sys = { workspace = true, features = ["stable-api-compiled-fallback"] }
+parking_lot.workspace = true
